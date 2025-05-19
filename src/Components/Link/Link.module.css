@@ -1,0 +1,53 @@
+/* Link.module.css */
+.link {
+  display: inline-flex;
+  align-items: center;
+  color: #0066cc; /* Яркий синий (IBM-стиль) */
+  text-decoration: none;
+  font-weight: 600; /* Полужирный */
+  padding: 0.125rem 0.25rem;
+  position: relative;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  gap: 0.375rem;
+  border-bottom: 2px solid rgba(0, 102, 204, 0.3); /* Полупрозрачное подчёркивание */
+}
+
+/* Эффекты при наведении */
+.link:hover {
+  color: #004499; /* Темнее */
+  border-bottom-color: currentColor; /* Непрозрачная линия */
+  background-color: rgba(0, 102, 204, 0.05); /* Лёгкий фон */
+  border-radius: 3px;
+}
+
+/* Состояние фокуса (для accessibility) */
+.link:focus {
+  outline: 2px solid rgba(0, 102, 204, 0.4);
+  outline-offset: 2px;
+}
+
+/* Активное состояние */
+.link:active {
+  color: #003366;
+  transform: translateY(1px);
+}
+
+/* Disabled-состояние */
+.disabled {
+  color: #999 !important;
+  border-bottom-color: #ccc !important;
+  cursor: not-allowed !important;
+  background-color: transparent !important;
+}
+
+/* Иконки */
+.link svg {
+  width: 0.9em;
+  height: 0.9em;
+  transition: transform 0.2s ease;
+}
+
+.link:hover svg {
+  transform: translateX(2px);
+}

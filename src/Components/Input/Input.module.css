@@ -1,0 +1,65 @@
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #2d3748;
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+/* Состояния */
+.input.default {
+  border-color: #e2e8f0;
+}
+
+.input.filled {
+  border-color: #cbd5e0;
+  background-color: #f8fafc;
+}
+
+.input.active {
+  border-color: #4299e1;
+  box-shadow: 0 0 0 1px #4299e1;
+}
+
+.input.error {
+  border-color: #f56565;
+}
+
+.input.error:focus {
+  box-shadow: 0 0 0 3px rgba(245, 101, 101, 0.5);
+}
+
+.input.disabled {
+  background-color: #edf2f7;
+  color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.errorText {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #f56565;
+}
+
+.input::placeholder {
+  color: #a0aec0;
+  opacity: 1;
+}
